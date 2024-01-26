@@ -1,0 +1,51 @@
+Twetter Clone Uygulaması yapalım
+
+Uygulamada sizden beklediğimiz; Enumlar, Interfaceler, StreamApiler, Optional, döngüler(While, for, foreach), Kalıtım, Generic konularını uygulamalarımızda kullanalım.
+
+Uygulamada olması gereken Sınıflar ve değişkenler
+
+User Sınıfı --> username, password, telefon, Profil
+
+Profil Sınıfı --> tweetSayisi, photo(String) , Bio, RegisterTarihi, Address, Follower, Following, Twwetleri, Mesaj, Opsiyonel(List<Retwwet> retweetEttiklerim)
+
+Mesaj Sınıfı --> Kim Gönderdi,Ne zaman Gönderdi, İçerik (Mesajlar dm kutusnda kim göndermiş ne göndermiş şeklinde tutalım)
+
+Adress Sınıfı --> City, Country, Street, PostalCode
+
+Tweet Sınıfı --> oluşturulmaTarihi, içerik, beğeniSayisi, HashTag(Ya enum), YorumSayisi, List<User> begenenler , Opsiyonel(List<User> rettweeter),
+
+Yorum Sınıfı --> içerik, yorumYapılmaTarihi, begeniSayisi, List<User> beğenenler
+
+
+User menusunde User’in yapabileceği işlemler aşağıdakileri metot yaparak kullanalım.
+
+register() metodu --> username, password, repassword, ve telefon ile register olsun
+
+login() metodu --> username ve password ile giriş yapsın
+
+tweetAt metodu --> kullanıcı video, resim veya text olarak tweet atabilsin
+
+tweeteYorumYap() metodu --> Yorum yapmak istediği tweetin id’sini belirterek yorum yapsın
+
+tweetSil() metodu --> id ye göre silebilcek ve sadece kendi tweetlerini silebilsin.
+
+tweetlerimiGöster() metodu --> login olan kullancı kendi tweetlerini görüntüleyebilecek
+
+profilGoruntule() metodu -->  id ya da username'e göre kişilerin profillerini görüntülesin
+
+mesajGonder() metodu --> usernamesini belirttiği kişiye mesaj göndersin,
+
+mesajlariKontrolEt() --> login olan kullanıcı kendi mesajlarını görüntülesin.
+
+user istediği useri engelleyebilsin ve engeli kaldırabilsin. (engellenen kullanıcılar engelleyen kullanıcıların profillerini görüntüleyemesin)
+
+
+Admin’in yapacağı işlemler
+
+Tüm kullanıcıları listelesin
+
+Tüm profilleri listelesin.
+
+Opsiyonel --> kullanıcı engellesin(Belli bir tarihe kadar engelli olsun o tarihe kadar user giriş yapamasın)
+
+Opsiyonel --> kullanıcı kısıtlasın, kısıtlanan kullanıcılar login olduktan sonra sadece tweet atamasın, diğer işlemleri gerçekleştirebilsin.
